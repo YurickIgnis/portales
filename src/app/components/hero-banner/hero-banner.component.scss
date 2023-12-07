@@ -1,0 +1,68 @@
+@import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+$color:#10531A;
+
+
+.bg-color {
+    --bs-bg-opacity: 1;
+    background-color: rgba(166, 166, 166, var(--bs-bg-opacity)) !important;
+}
+
+.form-control:focus {
+    border-color: $color;
+    box-shadow: inset 0 1px 1px rgba(72, 193, 94, 0.075), 0 0 8px $color;
+}
+
+
+.p-10 {
+    padding: ($spacer * 4) !important;
+}
+
+hr {
+    visibility: hidden;
+}
+
+.div-max-wt {
+    max-width:450px;
+}
+
+.img-fluid {
+    width: 250px;
+    height: 250px;
+}
+
+.btn-primary {
+    color: white;
+    text-shadow: 1px 1px 2px grey;
+    @include button-variant($color, darken($color, 7.5%), darken($color, 10%), lighten($color,5%), lighten($color, 10%), darken($color,30%));
+}
+
+.text-hero {
+    color: white;
+    text-shadow: 1px 1px 2px rgb(70, 70, 70);
+    text-align: left;
+    font-size: 22.0pt;
+    max-width: 100px;
+}
+
+.text-hero-sm {
+    color: $color;
+    text-align: center;
+    font-size: 14.0pt;
+    max-width: 100px;
+}
+
+.container-img-hero {
+    background-image: url('../../../assets/gob/back-hero-blur.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 82%;
+    width: auto;
+    height: auto;
+    }
+
+@media only screen and (min-width: 550px) {
+    .size{
+        width: 400px;
+    }
+}

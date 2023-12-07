@@ -1,0 +1,236 @@
+.bg-color {
+    --bs-bg-opacity: 1;
+    background-color: #A6A6A6 !important;
+}
+
+.selectno {
+  background-color: #c01c22;
+  border-radius: 20px;
+  padding: 3px 12px;
+  color: #fff !important;
+}
+.selectsi {
+  background-color: #219653;
+  border-radius: 20px;
+  padding: 3px 15px;
+  color: #fff !important;
+}
+
+
+table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: rgb(95, 93, 93) transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  /* Define clases CSS para diferentes niveles de tabulación */
+.tabulacion-nivel-1 {
+  margin-left: 20px; // Ajusta el margen según tus necesidades
+}
+
+.tabulacion-nivel-2 {
+  margin-left: 40px; // Ajusta el margen según tus necesidades
+}
+
+.tabulacion-nivel-3 {
+  margin-left: 40px !important // Ajusta el margen según tus necesidades
+}
+
+
+
+/* Media query para pantallas pequeñas, como dispositivos móviles */
+@media (max-width: 768px) {
+  .tabulacion-nivel-3 {
+    margin-left: 15px !important; /* Elimina el margen en pantallas pequeñas */
+  }
+}
+
+/* Estilos para dispositivos con un ancho máximo de 990px (ajusta según tus necesidades) */
+@media (max-width: 990px) {
+  /* Para la clase col-2, elimina la propiedad width y establece display en block */
+  .col-2 {
+     width: 100% !important;
+      display: block !important;
+  }
+
+  /* Para la clase col-10, elimina la propiedad width y establece display en block */
+  .col-10 {
+     width: 100% !important;
+      display: block !important;
+  }
+
+}
+
+.container {
+
+  h3.card-title.mbr-section-subtitle.mbr-fonts-style.display-7 {
+    font-size: 19.2px;
+  }
+
+  h5 {
+    font-size: 17.2px;
+  }
+
+  .panel {
+    .card {
+      background-color: transparent;
+      box-shadow: 0px 10px 20px 0px rgba(29, 29, 27, 0.2);
+      transition: background-color 0.3s linear;
+
+      &:hover {
+        .acc-button-container .acc-button {
+          background-color: #055a1c;
+
+          .acc-button-line1,
+          .acc-button-line2 {
+            background-color: white;
+          }
+        }
+      }
+
+      .heading-acc {
+        padding: 20px;
+        cursor: pointer;
+
+        &:hover {
+          .acc-button-container .acc-button {
+            background-color: #055a1c;
+
+            .acc-button-line1,
+            .acc-button-line2 {
+              background-color: white;
+            }
+          }
+        }
+
+        .acc-button-container {
+          .acc-button {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            position: relative;
+            transition: 0.3s linear;
+            background-color: transparent;
+
+            .acc-button-line1,
+            .acc-button-line2 {
+              transition: 0.3s linear;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              display: block;
+              background-color: black;
+              width: 2px;
+              height: 22px;
+              transform: translate(-50%, -50%);
+            }
+
+            .acc-button-line1 {
+              transform: translate(-50%, -50%) rotate(90deg);
+            }
+          }
+        }
+
+        &[aria-expanded="true"] .acc-button {
+          transform: rotate(-45deg);
+        }
+      }
+
+      .accordion-body {
+        max-height: 0;
+        overflow: hidden;
+        // transition: max-height 0.5s ease;
+        animation: collapseAccordion 1s ease-in-out;
+        padding-bottom: 4rem;
+      }
+      
+      .accordion-body.show {
+        max-height: 3000px; /* Adjust the value according to your content */
+        animation: expandAccordion 1s ease-in-out;
+      }
+      
+      @keyframes expandAccordion {
+        from {
+          max-height: 0;
+        }
+        to {
+          max-height: 3000px; /* Adjust the value according to your content */
+        }
+      }
+      @keyframes collapseAccordion {
+        from {
+          max-height: 3000px;
+        }
+        to {
+          max-height: 0; /* Adjust the value according to your content */
+        }
+      }
+      
+    }
+  }
+
+  
+}
+
+
+.acc-button-line1, .acc-button-line2 {
+  transition: 0.3s linear;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  background-color: black;
+  width: 2px;
+  height: 22px;
+  transform: translate(-50%, -50%);
+}
+
+// .acc-button-line1 {
+//   transform: translate(-50%, -50%) rotate(90deg);
+// }
+
+.rotate-line1 {
+  transform: translate(-50%, -50%) rotate(45deg) !important;
+}
+
+.rotate-line2 {
+  transform: translate(-50%, -50%) rotate(-45deg) !important;
+}
+

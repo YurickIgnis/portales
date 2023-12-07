@@ -1,0 +1,60 @@
+
+
+<div *ngIf="isLoading === true; else elseBlock">
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-center flex-column" style="height: 400px;">
+            <div class="align-self-center align-self-lg-center">
+                <p class="fw-lighter text-center">Buscando.</p>
+                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            </div>
+      
+          </div>
+    </div>  
+</div>
+
+<ng-template #elseBlock class="px-3 py-1">
+<div class="container">
+    <div class="d-flex flex-column align-items-left justify-content-center p-4">
+        <p>Resultados de la búsqueda: <strong>{{palabra}}</strong></p>
+        <hr>
+
+        <app-dep-finder [depArray]="depFinder" (depEvent)="selectDep($event)"></app-dep-finder>
+
+        <div 
+            infinite-scroll
+            [infiniteScrollDistance]="2"
+            [infiniteScrollThrottle]="1000"
+            (scrolled)="onScroll()">
+        <ul class="justify-content-left my-md-3">
+            <app-proc-card *ngFor="let data of sTramitesFiltrados"
+                title={{data.nombre}}
+                subtitle={{data.sujetoObligado}}
+                text={{data.modalidad}}
+                [list_chips]="[]"
+                text_btn="MÁS INFORMACIÓN"
+                homoclave={{data.homoclave}}>
+            </app-proc-card>
+        </ul>
+
+        <div *ngIf="isScrollLoadiong === true">
+            <div class="container">
+                <div class="d-flex flex-column align-items-center justify-content-center" style="height: 400px;">
+                    <p class="fw-lighter text-center">Buscando mas resultados.</p>
+                    <div class="align-self-center align-self-lg-center">
+                        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+                    </div>
+                  </div>
+            </div>  
+        </div>
+
+        <div *ngIf="sTramitesFiltrados.length <= 0" class="justify-content-center">
+            <p class="fw-lighter">No se encontraron resultados. Por favor, intente con otra palabra o seleccione otra dependencia.</p>
+        </div>
+
+        <div *ngIf="allResults === true" class="justify-content-center">
+            <p class="fw-lighter">Mostrando todos los resultados disponibles.</p>
+        </div>
+    </div>
+    </div>
+</div>
+</ng-template>

@@ -1,0 +1,69 @@
+<div class="main-finder d-flex-warp justify-content-center pt-5">
+
+  <nav class="navbar navbar-light">
+    <div class="container-fluid d-flex justify-content-center">
+        <div class="text-center">
+            <h1 style="text-shadow: 1px 1px 2px rgb(151, 149, 149);">Registro Estatal de Trámites y Servicios</h1>
+            <p class="fw-light" style="margin-top: 20px; font-size:14px;">Esta plataforma se encuentra en proceso de integración de la totalidad de los trámites y servicios.</p>
+            <p class="fw-light" style="margin-top: 20px;">Encuentra aquí la información sobre los trámites y servicios que ofrecen <br> las dependencias de Gobierno del Estado de San Luis Potosí.</p>
+            <p class="fw-light" style="margin-top: 20px;">Para acceder a la información, ingresa una palabra clave o el nombre de la Dependencia:</p>
+        </div>
+    </div>
+</nav>
+
+
+
+  <nav class="navbar navbar-light">
+    <div class="container-fluid d-flex justify-content-center">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()" class="d-flex">
+            <input
+              id="typeahead-focus"
+              formControlName="tag" 
+              class="form-control me-2 size" 
+              type="text" 
+              placeholder="Buscar por palabra clave o dependencia" 
+              aria-label="Buscar"
+            >
+            <button class="btn btn-lg btn-primary" type="submit">
+              <fa-icon [icon]="['fas', 'magnifying-glass']"></fa-icon></button>
+        </form>
+    </div>
+  </nav>
+</div>
+
+
+<!-- <div class="p-5 bg-color bg-success container-img-hero d-none d-sm-block">
+    <div class="container p-10">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-between">
+        <div class=" content div-max-wt">
+            <span class="text-hero">REGISTRO ESTATAL DE TRÁMITES Y SERVICIOS</span>
+            <hr />
+            <form [formGroup]="form" (ngSubmit)="onSubmit()">
+              <div class="input-group mb-3">
+                  <input formControlName="tag" type="text" class="form-control" placeholder="Buscar tramite" aria-label="Buscar tramite" aria-describedby="Buscar tramite">
+                  <div class="input-group-append">
+                    <button class="btn btn-lg btn-success">
+                        <fa-icon [icon]="['fas', 'magnifying-glass']"></fa-icon>
+                        Buscar
+                    </button>
+                  </div>
+              </div>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid d-block d-sm-none">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="input-group">
+          <input formControlName="tag" type="text" class="form-control" placeholder="Buscar tramite" aria-label="Buscar tramite" aria-describedby="Buscar tramite">
+          <div class="input-group-append">
+            <button class="btn btn-lg btn-success">
+                <fa-icon [icon]="['fas', 'magnifying-glass']"></fa-icon>
+                Buscar
+            </button>
+          </div>
+      </div>
+  </form>
+</div> -->

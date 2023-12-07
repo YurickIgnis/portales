@@ -1,0 +1,17 @@
+$color:#10531A;
+
+@media only screen and (min-width: 550px) {
+    .size{
+        width: 400px;
+    }
+}
+
+.form-control:focus {
+    border-color: $color;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px $color;
+}
+
+
+nav.navbar.navbar-light.bg-light {
+margin-top: 1px;
+}

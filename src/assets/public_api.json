@@ -1,0 +1,271 @@
+{
+  "publicApi": {
+    "cintillo": [
+      {
+        "link": "https://www.facebook.com/GobEdoSLP/",
+        "data": "facebook-f",
+        "tipo": "icono"
+      },
+      {
+        "link": "https://twitter.com/GobEdoSLP",
+        "data": "twitter",
+        "tipo": "icono"
+      },
+      {
+        "link": "https://www.youtube.com/@GobiernodelEstadoSanLuisPotosi",
+        "data": "youtube",
+        "tipo": "icono"
+      },
+      {
+        "link": "https://t.me/gobedoslp",
+        "data": "telegram",
+        "tipo": "icono"
+      },
+      {
+        "link": "https://www.instagram.com/gobedoslp/",
+        "data": "instagram",
+        "tipo": "icono"
+      }
+    ],
+    "sectores": [
+      {
+        "id": 1,
+        "icono": "tractor"
+      },
+      {
+        "id": 2,
+        "icono": "pickaxe"
+      },
+      {
+        "id": 3,
+        "icono": "bolt"
+      },
+      {
+        "id": 4,
+        "icono": "person-digging"
+      },
+      {
+        "id": 5,
+        "icono": "industry"
+      },
+      {
+        "id": 6,
+        "icono": "money-bill-trend-up"
+      },
+      {
+        "id": 7,
+        "icono": "money-bill-trend-up"
+      },
+      {
+        "id": 8,
+        "icono": "car"
+      },
+      {
+        "id": 9,
+        "icono": "tv"
+      },
+      {
+        "id": 10,
+        "icono": "coins"
+      },
+      {
+        "id": 11,
+        "icono": "house"
+      },
+      {
+        "id": 12,
+        "icono": "user-tie"
+      },
+      {
+        "id": 13,
+        "icono": "building"
+      },
+      {
+        "id": 14,
+        "icono": "headset"
+      },
+      {
+        "id": 15,
+        "icono": "book"
+      },
+      {
+        "id": 16,
+        "icono": "notes-medical"
+      },
+      {
+        "id": 17,
+        "icono": "dumbbell"
+      },
+      {
+        "id": 18,
+        "icono": "hotel"
+      },
+      {
+        "id": 19,
+        "icono": "laptop-file"
+      },
+      {
+        "id": 20,
+        "icono": "scale-balanced"
+      }
+    ],
+    "footera": [
+      {
+        "texto": "Catálogo Nacional de Regulaciones Trámites y Servicios (CNARTyS)",
+        "link": "https://catalogonacional.gob.mx/"
+      },
+      {
+        "texto": "Dirección de Mejora Regulatoria",
+        "link": "https://sedecoslp.gob.mx/mejora-regulatoria/"
+      },
+      {
+        "texto": "Mapa del sitio",
+        "link": "#"
+      }
+    ],
+    "footerb": [
+      {
+        "texto": "Emergencia 911",
+        "link": ""
+      },
+      {
+        "texto": "Denuncia Anónima 089",
+        "link": ""
+      },
+      {
+        "texto": "Cruz Roja (444) 815 73 14",
+        "link": ""
+      },
+      {
+        "texto": "Bomberos (444) 815 35 83",
+        "link": ""
+      },
+      {
+        "texto": "Protección Civil (444) 833 73 38",
+        "link": ""
+      }
+    ],
+    "footerc": [
+      {
+        "texto": "Numero contacto",
+        "link": "https://slp.gob.mx/finanzas/Paginas/App-m%C3%B3vil-SLP-Finanzas.aspx"
+      },
+      {
+        "texto": "Palacio de Gobierno Jardín Hidalgo No.11 Zona Centro C.P 78000",
+        "link": ""
+      }
+    ],
+    "bot_footer": [
+      {
+        "texto": "Aviso de Privacidad",
+        "link": "/aviso"
+      },
+      {
+        "texto": "Contactar al Web Master",
+        "link": "holawebmaster@slp.gob.mx"
+      }
+    ],
+    "infografia": [
+      {
+        "text": "Registro Estatal de Regulaciones",
+        "iconPrex": "fas",
+        "icon": "file-invoice",
+        "link": "https://catalogonacional.gob.mx/",
+        "modalText": "El Registro de Regulaciones es una recopilación de los diversos ordenamientos que delimitan las actividades del Gobierno de la Estado tales como Leyes, Reglamentos, Lineamientos, entre otros, con el fin de que la ciudadanía en general pueda consultarlos de manera rápida y efectiva.\n\nEsta información se publica a través de la Plataforma Nacional, y la misma se encuentra en proceso de integración."
+      },
+      {
+        "text": "Registro de Visitas Domiciliarias",
+        "iconPrex": "fas",
+        "icon": "file-circle-question",
+        "link": "https://catalogonacional.gob.mx/",
+        "modalText": "El Registro de Visitas Domiciliaras es un concentrado de las diferentes inspecciones, verificaciones y visitas que realizan las Dependencias de Gobierno del Estado de San Luis Potosí. Se compone por una ficha que detalla cada una de las mismas, lo que otorga certeza al ciudadano que dicha acción se encuentra prevista en una regulación.\n\nEsta información se publica a través de la Plataforma Nacional, y la misma se encuentra en proceso de implementación."
+      },
+      {
+        "text": "Padrón de Inspectores",
+        "iconPrex": "fas",
+        "icon": "file-lines",
+        "link": "https://catalogonacional.gob.mx/",
+        "modalText": "El Registro de Inspectores es la información de los servidores públicos que cuentan con atribuciones para llevar a cabo las diferentes inspecciones, verificaciones y visitas domiciliarias, permitiendo que el ciudadano compruebe su identidad y dándole la seguridad que quien realiza dicha actividad es un servidor público autorizado para ese fin.\n\nEsta información se publica a través de la Plataforma Nacional, y la misma se encuentra en proceso de implementación."
+      },
+      {
+        "text": "Protesta Ciudadana",
+        "iconPrex": "fas",
+        "icon": "landmark",
+        "link": "http://rutys.slp.gob.mx/busquedaSPC.php",
+        "modalText": "Mediante el Sistema de Protesta Ciudadana los ciudadanos podrán presentar una queja en caso de que un servidor público niegue la gestión de un Trámite o Servicio sin causa justificada, altere o incumpla con la información publicada en el Registro Estatal de Trámites y Servicios.\n\nEsta información se publica a través de la Plataforma Nacional, y la misma se encuentra en proceso de implementación."
+      }
+    ],
+    "acordeones": [
+      {
+        "id": 1,
+        "pregunta": "¿Qué es el Catálogo Estatal de Regulaciones, Trámites y Servicios?",
+        "respuesta": "Es la herramienta electrónica mediante la cual se pone a disposición del ciudadano la información relativa a las regulaciones, trámites, servicios, visitas domiciliarias e inspectores del Estado de San Luis Potosí."
+      },
+      {
+        "id": 2,
+        "pregunta": "¿Qué es el Registro Estatal de regulaciones?",
+        "respuesta": "Es una recopilación de los diversos ordenamientos que delimitan las actividades del Gobierno de la Estado tales como Leyes, Reglamentos, Lineamientos, entre otros, con el fin de que la ciudadanía en general pueda consultarlos de manera rápida y efectiva."
+      },
+      {
+        "id": 3,
+        "pregunta": "¿Cómo puede consultar el Registro de regulaciones?",
+        "respuesta": "1. Dar click en el botón de Regulaciones el cual te llevará a la plataforma nacional,<br>2. Elegir la “Búsqueda Avanzada”,<br>3. Señalar la palabra Regulaciones de la lista “Tipo de registro”,<br>4. Seleccionar en “Estado” la opción San Luis Potosí,<br>5. Presionar el icono “Aplicar Filtros” y se desplegarán las regulaciones del Estado.<br><br><span class=\"resaltado\">Si requieres algo más específico podrás utilizar los filtros de “Municipio”, “Nivel de Gobierno” y en algunos casos “Dependencia”.</span>"
+      },
+      {
+        "id": 4,
+        "pregunta": "¿Qué es el Registro Estatal de trámites y servicios?",
+        "respuesta": "Es el conjunto de trámites y servicios que ofrecen las dependencias de Gobierno del Estado de San Luis Potosí a la ciudadanía."
+      },
+      {
+        "id": 5,
+        "pregunta": "¿Cómo puede consultar el Registro de trámites y servicios?",
+        "respuesta": "1. Para accesar debes ingresar una palabra clave relacionada con el nombre del trámite, servicio o Dependencia,<br>2. Dar click en el botón buscar y te mostrará lo relacionado,<br>3. Adicionalmente estos resultados podrán filtrarse por dependencia <br><br>Ejemplo: Si buscas un acta de nacimiento puedes redactar la palabra “acta” y se desplegarán como resultado todos los trámites y servicios que contengan esa palabra."
+      },
+      {
+        "id": 6,
+        "pregunta": "¿Qué es el Registro Estatal de visitas domiciliarias?",
+        "respuesta": "Es un concentrado de las diferentes inspecciones, verificaciones y visitas que realizan las Dependencias de Gobierno del Estado de San Luis Potosí. Se compone por una ficha que detalla cada una de las mismas, lo que otorga certeza al ciudadano que dicha acción se encuentra prevista en una regulación."
+      },
+      {
+        "id": 7,
+        "pregunta": "¿Cómo puede consultar el Registro de visitas domiciliarias?",
+        "respuesta": "1. Da click en el botón de Registro de Visitas Domiciliarias el cual te llevará a la plataforma nacional,<br>2. Elegir la Búsqueda avanzada,<br>3. Seleccionar la opción Inspecciones, verificaciones y visitas domiciliarias de la lista “Tipo de registro”,<br>4. Señalar en “Estado” la opción San Luis Potosí.<br>5. Presionar el icono Aplicar filtros y se desplegará la información que buscas. <br><br>En caso de que requieras algo más específico podrás utilizar los filtros de “Municipio”, “Nivel de Gobierno” y en algunos casos “Dependencia”."
+      },
+      {
+        "id": 8,
+        "pregunta": "¿Qué es el Registro Estatal de inspectores?",
+        "respuesta": "Es la información de los servidores públicos que cuentan con atribuciones para llevar a cabo las diferentes inspecciones, verificaciones y visitas domiciliarias, permitiendo que el ciudadano compruebe su identidad y dándole la seguridad que quien realiza dicha actividad es un servidor público autorizado para ese fin."
+      },
+      {
+        "id": 9,
+        "pregunta": "¿Cómo puede consultar el Registro de inspectores?",
+        "respuesta": "1. Dar click en el botón de Registro de Visitas Domiciliarias el cual te llevará a la plataforma nacional,<br>2. Elegir la Búsqueda avanzada, seleccionar la opción Inspectores, verificadores y visitadores de la lista “Tipo de registro”,<br>3. Seleccionar “Estado” la opción San Luis Potosí,<br>4. Presionar el icono Aplicar filtros y se desplegará la información que buscas. <br><br>En caso de que requieras algo más específico podrás utilizar los filtros de “Municipio”, “Nivel de Gobierno” y en algunos casos “Dependencia”."
+      },
+      {
+        "id": 10,
+        "pregunta": "¿Qué es una Protesta Ciudadana?",
+        "respuesta": "La petición o inconformidad que puede presentar un ciudadano cuando el servidor público se niegue a otorgar el trámite o servicio de conformidad con la información publicada en el Registro Estatal."
+      },
+      {
+        "id": 11,
+        "pregunta": "¿Cuándo puedo presentar una Protesta Ciudadana?",
+        "respuesta": "Cuando el servidor público que te atienda:<br><br>1. Niegue la gestión de su Trámite o Servicio sin causa justificada<br>2. Exija requisitos o documentos adicionales<br>3. Exija un formato adicional o diferente al señalado en el Registro de Trámites y Servicios<br>4. Pretenda cobrar cuotas adicionales o distintas a las publicadas<br>5. No respete la vigencia del Trámite o Servicio<br><br>O bien cuando:<br><br>1. No se respeten los plazos de respuesta y/o prevención previstos<br>2. Se realicen inspecciones o verificaciones que no correspondan o que excedan lo permitido o previsto<br>3. No se respeten los criterios para resolver su solicitud<br>4. Se proporcionen datos de contacto erróneos del responsable del Trámite o Servicio"
+      },
+      {
+        "id": 12,
+        "pregunta": "¿Cómo puedo presentar una Protesta Ciudadana?",
+        "respuesta": "1. Dar click al icono de Protesta ciudadana,<br>2. Utilizar las opciones de búsqueda ya sea por palabra clave o Dependencia,<br>3. Seleccionar el trámite o servicio para el cual deseas presentar la queja o sugerencia. Esta acción te permitirá visualizar toda la información relativa,<br>4. Verificar la información del trámite o servicio para asegurar que el motivo de tu protesta es procedente,<br>5. De ser así selecciona la opción “Registrar Protesta Ciudadana”<br>6. Se desplegará una ventana para que captures tus datos y el motivo de tu protesta, es muy importante que registres una dirección de correo electrónico válida ya que será el medio de contacto,<br>7. Una vez capturados todos los campos presiona el icono “Enviar correo”<br>8. En caso de ser procedente tu protesta será atendida en 5 días hábiles en términos del artículo 77 de la Ley de Mejora Regulatoria del Estado y Municipios de San Luis Potosí."
+      },
+      {
+        "id": 13,
+        "pregunta": "¿Quién es el responsable de la información publicada en el Catálogo Estatal?",
+        "respuesta": "Las Dependencias  de Gobierno del Estado de San Luis Potosí."
+      },
+      {
+        "id": 14,
+        "pregunta": "¿Qué beneficio tiene para el ciudadano conocer la información capturada en el Catálogo?",
+        "respuesta": "Permite conocer todos los trámites y servicios que ofrecen las Dependencias de Gobierno del Estado de San Luis Potosí, facilitando el cumplimiento de las diversas obligaciones y permitiendo el acceso a los programas existentes, ya que te ofrece información relativa a: Requisitos, medios, horarios y oficinas de atención, tiempos de respuesta, costos, entre otros."
+      }
+    ]    
+  }
+}

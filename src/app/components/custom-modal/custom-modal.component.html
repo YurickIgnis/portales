@@ -1,0 +1,13 @@
+<div class="modal-header">
+    <h4 class="modal-title">{{ modalTitle }}</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+    <p [innerHTML]="modalText"></p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-seczondary" (click)="activeModal.close('Close click')" *ngIf="modalTitle === 'Registro Estatal de Regulaciones' || modalTitle === 'Protesta Ciudadana'">Cerrar</button>
+    <button type="button" class="btn btn-primary" (click)="navigateToLink(modalLink)" *ngIf="modalTitle === 'Registro Estatal de Regulaciones' || modalTitle === 'Protesta Ciudadana'">Ir al sitio</button>
+    <button type="button" class="btn btn-secondary" (click)="activeModal.close('Close click')" *ngIf="modalTitle !== 'Registro Estatal de Regulaciones' && modalTitle !== 'Protesta Ciudadana'">Cerrar</button>
+  </div>
+  

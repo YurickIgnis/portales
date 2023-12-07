@@ -1,0 +1,34 @@
+<!-- <app-sec-list [sectors]=sectors [pubApi]=pubApi></app-sec-list> -->
+
+<app-hero-banner></app-hero-banner>
+
+<div class="container-fluid">
+    <app-title-text title="conoce"></app-title-text>
+    <div class="text-center p-4">
+        <h4 class="lead">Catálogo de Regulaciones, Trámites y Servicios del Estado de San Luis Potosí</h4> 
+    </div>
+    <app-info-list [pubApi]=pubApi></app-info-list>
+</div>
+
+
+<div class="bg-white">
+    <div class="container p-5" >
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-around">
+            <div *ngIf="loadingStatsData === false; else elseBlock">
+                <div class="container">
+                    <div class="d-flex align-items-center justify-content-center flex-column" style="height: 150px;">
+                        <div class="align-self-center align-self-lg-center">
+                            <p class="fw-lighter text-center">Cargando.</p>
+                            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+                        </div>
+                      </div>
+                </div>  
+            </div>
+        </div>
+        <ng-template #elseBlock class="d-flex flex-wrap align-items-center justify-content-center justify-content-center">
+            <app-circle-info title="Trámites y Servicios" data="{{stats.totalTramitesPub}}"></app-circle-info>
+            <app-circle-info title="Trámites y Servicios en línea" data="{{stats.totaltraEnlinea}}"></app-circle-info>
+            <app-circle-info title="Dependencias y Entidades" data="{{stats.totalDependencias}}"></app-circle-info>
+        </ng-template>
+    </div>
+</div>

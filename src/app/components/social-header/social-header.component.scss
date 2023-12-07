@@ -1,0 +1,196 @@
+.bg-color {
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); /* Agregamos la sombra */
+  min-height: 70px; /* Establecemos la altura mínima */
+  transition: all 0.3s;
+  color: #232323;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Roboto', sans-serif;
+  justify-content: space-between;
+  line-height: 24px;
+  padding: 0px 16px;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: 4rem; /* Tamaño original de la imagen */
+  transition: height 0.3s ease; /* Agrega una transición suave de 0.3 segundos */
+}
+
+.menu-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle button {
+  border: none;
+}
+
+// .menu-items {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+
+// .menu-items a {
+//   color: #fff;
+//   text-decoration: none;
+//   padding: 10px 20px;
+// }
+
+// .menu-items a:hover {
+//   background-color: #13521F;
+// }
+
+.d-none {
+  display: none;
+}
+
+.d-sm-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-sm-none {
+  display: none;
+}
+
+
+.navbar .navbar-brand {
+  flex-shrink: initial;
+  flex-basis: auto;
+  word-break: break-word;
+  padding-right: 2rem;
+}
+
+
+@media (max-width: 991px) and (max-width: 767px) {
+  .cid-tJIuXgqkit .navbar .navbar-brand {
+    width: calc(100% - 31px);
+  }
+}
+
+
+.cid-tJIuXgqkit .navbar.navbar-short .navbar-logo img {
+  height: 2.5rem !important;
+}
+.cid-tJIuXgqkit .navbar.navbar-short .navbar-brand {
+  min-height: 60px;
+  padding: 0;
+}
+.cid-tJIuXgqkit .navbar-brand {
+  min-height: 70px;
+  flex-shrink: 0;
+  align-items: center;
+  margin-right: 0;
+  padding: 10px 0;
+  transition: all 0.3s;
+  word-break: break-word;
+  z-index: 1;
+}
+.cid-tJIuXgqkit .navbar-brand .navbar-caption {
+  line-height: inherit !important;
+}
+.cid-tJIuXgqkit .navbar-brand .navbar-logo a {
+  outline: none;
+}
+
+.cid-tJIuXgqkit .navbar .navbar-logo img {
+  width: auto;
+}
+
+.cid-tJIuXgqkit .navbar .navbar-logo img {
+  height: 3rem !important;
+}
+
+.cid-tJIuXgqkit .navbar.navbar-short .navbar-logo img {
+  height: 2.5rem !important;
+}
+
+
+.cid-tJIuXgqkit .navbar-brand .navbar-logo a {
+  outline: none;
+}
+.menu-overlay {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // padding: 20px 0;
+}
+
+.menu-items a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+
+.menu-items a {
+  align-items: center;
+  color: #232323;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-size: 19.2px;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 28.8px;
+  margin: 12.8064px 19.2px;
+  padding: 0px 5.76px;
+  text-align: left;
+  text-decoration: none; /* Para quitar la decoración de enlace */
+}
+
+
+// @media (max-width: 992px) {
+//   .menu-items {
+//     display: none;
+//   }
+
+//   .menu-toggle {
+//     display: block;
+//   }
+// }
+
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ajusta el valor según sea necesario */
+  /* Otros estilos personalizados */
+}
+
+.spacer {
+  margin-top: 70px; /* Ajusta la altura según tu barra de navegación fija */
+}
+
+
+/* En social-header.component.scss */
+.navbar.fixed-top {
+  position: fixed;
+  min-height: 70px;
+  // transition: all 0.3s;
+  transition: min-height 0.3s ease;
+}
+
+.navbar.fixed-top.scroll-down {
+  min-height: 50px; /* Define la altura mínima cuando se desplaza hacia abajo */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); /* Agrega una sombra al hacer scroll */
+}
+
+/* Agrega este estilo para reducir el tamaño de la imagen al hacer scroll */
+.navbar.fixed-top.scroll-down .navbar-brand img {
+  height: 3rem !important; /* Tamaño más pequeño de la imagen */
+}

@@ -1,0 +1,176 @@
+{
+    "Sitios_Recomendados":
+    [
+      {
+      "link1": "Catálogo Nacional de Regulaciones Trámites y Servicios (CENARTyS)",
+      "link2": "Dirección de Mejora Regulatoria",
+      "link3": "Acerca del Portal",
+      "link4": "Glosario",
+      "link5": "Mapa del sitio"
+      }
+    ],
+    "Contactanos":
+    [
+      {
+      "direccion": "Palacio de Gobierno Jardín Hidalgo No.11 Zona Centro C.P 78000",
+      "emergencia":"Emergencia 911",
+      "denuncia_anonima": "Denuncia Anónima 089",
+      "cruz_roja": "Cruz Roja (444) 815 73 14",
+      "bomberos": "Bomberos (444) 815 35 83",
+      "proteccion_civil": "Protección Civil (444) 833 73 38"
+      }
+    ],
+    "Apps":
+    [
+      {
+      "app1": "SLP Finanzas",
+      "app2": "Calificaciones SEGE"
+      }
+    ],
+    "Footer":
+    [
+      {
+      "derechos": "© 2023 Todos los derechos reservados ",
+      "aviso": "Aviso de Privacidad | "
+      }
+    ],
+    "Cintillo":
+    [
+      {
+      "web_master": "holawebmaster@slp.gob.mx",
+      "contactar_web_master":"Contactar al Web Master",
+      "mapa_sitio":"Mapa del Sitio"
+      }
+    ],
+    "Iconos_Cintillo":
+    [
+      {
+      "facebook-f":{
+        "nombre": "facebook-f",
+        "facebook_link": "https://www.facebook.com"
+      },
+      "twitter":{
+        "twitter_link": "https://www.twitter.com"
+      },
+      "youtube":{
+        "youtube_link": "https://www.youtube.com"
+      },
+      "telegram_icon":{
+        "telegram_link": "https://www.telegram.com"
+      },
+      "instagram_icon":
+      {
+        "instagram_link": "https://www.instagram.com"
+      }
+  
+    }
+    ],
+    "Categorias":
+    [
+      {
+        "Agricultura, cría y explotación de animales, aprovechamiento forestal, pesca y caza":
+        {
+          "id": "1",
+          "icono": "tractor"
+        },
+        "Mineria":
+        {
+          "id": "2",
+          "icono": "pickaxe"
+        },
+        "Generación, transmisión, distribución y comercialización de energía eléctrica, suministro de agua y de gas natural por ductos al consumidor final":
+        {
+          "id": "3",
+          "icono": "bolt"
+        },
+        "Construccion":
+        {
+          "id": "4",
+          "icono": "person-digging"
+        },
+        "Industrias manufactureras":
+        {
+          "id": "5",
+          "icono": "industry"
+        },
+        "Comercio al por mayor":
+        {
+          "id": "6",
+          "icono": "money-bill-trend-up"
+        },
+        "Comercio al por menor":
+        {
+          "id": "7",
+          "icono": "money-bill-trend-up"
+        },
+        "Transportes, correos y almacenamiento":
+        {
+          "id": "8",
+          "icono": "car"
+        },
+        "Informacion en medios masivos":
+        {
+          "id": "9",
+          "icono": "tv"
+        },
+        "Servicios financieros y de seguros":
+        {
+          "id": "10",
+          "icono": "coins"
+        },
+        "Servicios inmobiliarios y de alquiler de bienes muebles e intangibles":
+        {
+          "id": "11",
+          "icono": "house"
+        },
+        "Servicios profesionales, científicos y técnicos":
+        {
+          "id": "12",
+          "icono": "user-tie"
+        },
+        "Corporativos":
+        {
+          "id": "13",
+          "icono": "building"
+        },
+        "Servicios de apoyo a los negocios y manejo de residuos, y servicios de remediación":
+        {
+          "id": "14",
+          "icono": "headset"
+        },
+        "Servicios educativos":
+        {
+          "id": "15",
+          "icono": "book"
+        },
+        "Servicios de salud y de asistencia social":
+        {
+          "id": "16",
+          "icono": "notes-medical"
+        },
+        "Servicios de esparcimiento culturales y deportivos, y otros servicios recreativos":
+        {
+          "id": "17",
+          "icono": "dumbbell"
+        },
+        "Servicios de alojamiento temporal y de preparación de alimentos y bebidas":
+        {
+          "id": "18",
+          "icono": "hotel"
+        },
+        "Otros servicios excepto actividades gubernamentales":
+        {
+          "id": "19",
+          "icono": "laptop-file"
+        },
+        "Actividades legislativas, gubernamentales, de impartición de justicia y de organismos internacionales y extraterritoriales":
+        {
+          "id": "20",
+          "icono": "scale-balanced"
+        }
+      }
+  
+    ]
+  
+  }
+  

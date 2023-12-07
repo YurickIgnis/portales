@@ -1,0 +1,7 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center">
+            <app-sec-card *ngFor="let sec of sectors" link="{{sec.id}}" text="{{sec.nombre}}" iconPrex="fas" [icon]=getIcon(sec.id)></app-sec-card>
+        </div>
+    </div>
+</div>

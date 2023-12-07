@@ -1,0 +1,27 @@
+@import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+$mynewcolor:#338C36;
+
+.chip {
+    display: inline-block;
+    padding: 0 15px;
+    height: 30px;
+    width: 150px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 10px;
+    border : 1.5px solid #707070;
+    background-color: #fff;
+}
+
+
+.btn-primary {
+  color: white;
+  text-shadow: 1px 1px 2px grey;
+  @include button-variant($mynewcolor, darken($mynewcolor, 7.5%), darken($mynewcolor, 10%), lighten($mynewcolor,5%), lighten($mynewcolor, 10%), darken($mynewcolor,30%));
+}
+
+h5 {
+  color: #075A1C;
+}

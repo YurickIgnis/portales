@@ -1,0 +1,165 @@
+<!-- <div class="border bg-green-color "></div> -->
+<div class="bg-color">
+    <div class="container" >
+    <footer class="text-center text-lg-start text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row my-4">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <ul class="list-unstyled">
+              
+              <li>
+                <div class="d-flex justify-content-center">
+                  <img src="../../../assets/gob/Logo-blanco.png" height="90" alt=""
+                       loading="lazy" />
+                </div>
+              </li>
+
+              <li>
+                Ultima actualización: 
+              </li>
+
+              <li *ngIf="stats != null" class="mb-2">
+                <div *ngIf="pubApi != null">
+                  <p><i class="mb-2"></i>Fecha: {{ formatDate(stats.ultimoModiTramite.fechaModificacion)}}</p>
+                </div>
+              </li>
+              
+            </ul>
+  
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-5 mb-4 mb-md-0">
+            <h5 class="mb-4">Sitios recomendados</h5>
+  
+            <ul class="list-unstyled">
+
+              <div *ngIf="pubApi != null">
+                <li *ngFor="let data of pubApi.publicApi.footera" class="mb-2">
+                    <a href="{{data.link}}" class="text-white" target=”_blank”><i class=""></i>{{data.texto}}</a>
+                </li>
+              </div>
+
+                <!-- <li class="mb-2">
+                    <a href="#!" class="text-white"><i class=""></i>Dirección de Mejora Regulatoria</a>
+                </li>
+                <li class="mb-2">
+                    <a href="#!" class="text-white"><i class=""></i>Acerca del Portal</a>
+                </li>
+                <li class="mb-2">
+                    <a href="#!" class="text-white"><i class=""></i>Glosario</a>
+                </li>
+                <li class="mb-2">
+                    <a href="#!" class="text-white"><i class=""></i>Mapa del sitio</a>
+                </li> -->
+                
+            </ul>
+
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="mb-4">Números de Emergencia</h5>
+  
+            <ul class="list-unstyled">
+              <!-- <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-2"></i>Palacio de Gobierno Jardín Hidalgo No. 11 Zona Centro C.P 78000</a>
+              </li> -->
+              <ng-container *ngIf="pubApi != null">
+                <li *ngFor="let data of pubApi.publicApi.footerb">
+                  <div class="mb-2">{{data.texto}}</div>
+                </li>
+              </ng-container>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="mb-4">Contáctanos</h5>
+  
+            <ul class="list-unstyled">
+              <!-- <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-2"></i>Palacio de Gobierno Jardín Hidalgo No. 11 Zona Centro C.P 78000</a>
+              </li> -->
+              <ng-container *ngIf="pubApi != null">
+                <li *ngFor="let data of pubApi.publicApi.footerc">
+                  <div class="mb-2">{{data.texto}}</div>
+                </li>
+              </ng-container>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+        
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+      <!-- Copyright -->
+    </footer>
+  
+  </div>
+</div>
+<!-- <nav class="px-3 py-1 bg-color text-white">
+  <div class="container-fluid">
+    <div class="d-flex flex-wrap align-items-center justify-content-end justify-content-lg-end">
+        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+          <ng-container *ngIf="pubApi != null">
+            <li *ngFor="let data of pubApi.publicApi.cintillo">
+              <a *ngIf="data.tipo === 'texto'; else elseBlock" href="{{data.link}}" class="nav-link text-white">
+                  {{data.data}}
+                </a>
+                <ng-template #elseBlock>
+                  <a href="{{data.link}}" target="_blank" class="nav-link text-white">
+                    <fa-icon [icon]="['fab', data.data]"></fa-icon>
+                  </a>
+                </ng-template>
+            </li>
+          </ng-container>
+        </ul>
+    </div>
+</div>
+</nav>
+<div *ngIf="pubApi != null">
+<div class="bg-color">
+    <div class="text-center text-white p-3" style="background-color: rgba(255, 255, 255, 0.2)">
+    © 2023 Todos los derechos reservados | 
+    <a class="text-white" href="{{pubApi.publicApi.bot_footer[0].link}}">{{pubApi.publicApi.bot_footer[0].texto}}</a>
+    |
+    <a class="text-white" href="mailto: {{pubApi.publicApi.bot_footer[1].link}}">{{pubApi.publicApi.bot_footer[1].texto}}</a>
+    </div>
+</div>
+</div> -->
+
+<nav class="px-3 py-1 bg-color-2 text-white">
+  <div class="container-fluid">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-center">
+        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+          <ng-container *ngIf="pubApi != null">
+            <li class="text-center text-white p-2">
+              © 2023 Todos los derechos reservados | 
+              <a class="text-white" href="{{pubApi.publicApi.bot_footer[0].link}}">{{pubApi.publicApi.bot_footer[0].texto}}</a>
+              |
+              <a class="text-white" href="mailto: {{pubApi.publicApi.bot_footer[1].link}}">{{pubApi.publicApi.bot_footer[1].texto}}</a>
+            </li>
+            <li *ngFor="let data of pubApi.publicApi.cintillo">
+              <a *ngIf="data.tipo === 'texto'; else elseBlock" href="{{data.link}}" class="nav-link text-white">
+                  {{data.data}}
+                </a>
+                <ng-template #elseBlock>
+                  <a href="{{data.link}}" target="_blank" class="nav-link text-white">
+                    <fa-icon [icon]="['fab', data.data]"></fa-icon>
+                  </a>
+                </ng-template>
+            </li>
+          </ng-container>
+        </ul>
+    </div>
+</div>
+</nav>
+  <!-- End of .container -->

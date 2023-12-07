@@ -1,0 +1,47 @@
+<div class="navbar d-none d-lg-block navbar-expand-lg bg-color"  [ngClass]="{'fixed-top': isScrolled, 'scroll-down': isScrolled}">
+  <div class="container">
+    <div class="navbar-brand text-white">
+      <span class="navbar-logo">
+        <a href="/">
+          <!-- <img src="https://r.mobirisesite.com/316013/assets/images/logo-h_ljrxwwmp.png" alt="header image" width="156" height="55"> -->
+          <img src="https://r.mobirisesite.com/316013/assets/images/logo-h_ljrxwwmp.png" alt="San luis Potosí" style="height: 4rem;">
+        </a>
+      </span>
+    </div>
+    <div class="menu-items d-none d-lg-flex">
+      <ul class="navbar-nav nav-dropdown nav-right">
+        <li class="nav-item">
+          <a href="/" class="nav-link link text-black text-primary display-4">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a href="/ayuda" class="nav-link link text-black text-primary display-4 ">Ayuda</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="d-block d-lg-none" >
+  <div class="px-3 py-1 bg-color">
+    <div class="container-fluid position-relative">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="#" class="navbar-brand text-white">
+          <img src="https://r.mobirisesite.com/316013/assets/images/logo-h_ljrxwwmp.png" alt="San luis Potosí">
+        </a>
+        <button (click)="toggleCollapse()" class="btn btn-outline d-block d-lg-none p-0">
+          <fa-icon [icon]="isCollapsed ? ['fas', 'bars'] : ['fas', 'times']" class="fa-2x"></fa-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="menu-overlay" [ngClass]="{'d-none': isCollapsed, 'd-block': !isCollapsed}">
+    <div class="px-3 py-1 bg-color">
+      <div class="container-fluid">
+        <div class="menu-items">
+          <a href="/" class="text-black">Inicio</a>
+          <a href="/ayuda" class="text-black">Ayuda</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

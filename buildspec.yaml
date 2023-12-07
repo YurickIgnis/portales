@@ -1,0 +1,22 @@
+version: 0.2
+        
+phases:
+  install:
+    runtime-versions:
+      nodejs: latest
+    commands:
+      - echo ******* Actualizando Angular *******
+      - n 18
+      - npm install -g @angular/cli
+      - npm install
+  build:
+    commands:
+      - echo ******* Compilando archivos angular *******
+      - ng build --configuration=production
+  post_build:
+    commands:
+      - echo ********* BORRADO S3 *********
+      - aws s3 rm s3://tramites.app/ --recursive --exclude "private/*"
+      - echo ******* Copiado de Archivos Compildos a S3 *******
+      - aws s3 cp dist/rutys-dev s3://tramites.app --recursive
+      - echo ******* Finalización del Proceso *******

@@ -1,0 +1,13 @@
+<div class="card border-0" style="width: auto;">
+    <div class="card-body">
+        <h5 class="card-title ">{{title}}</h5>
+        <p class="card-text">Modalidad: {{text === "" ? "No aplica": text}}</p>
+        <h6 class="card-subtitle mb-2 text-muted">{{subtitle}}</h6>
+        <div class="m-1">
+            <div *ngFor="let chip of list_chips" class="chip m-1">
+                {{chip}}
+            </div>
+        </div>
+        <a href="/detalles/{{homoclave}}" target="_blank" *ngIf="text_btn != ''" class="btn btn-primary">{{text_btn}}</a>
+    </div>
+</div>

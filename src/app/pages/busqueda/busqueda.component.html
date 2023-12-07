@@ -1,0 +1,8 @@
+<app-hero-banner-lite [word]=busqueda></app-hero-banner-lite>
+
+<app-proc-card-table [palabra]="busqueda"></app-proc-card-table>
+
+<ng-template #elseBlock class="px-3 py-1">
+    <p class="fw-lighter text-center">No se encontraron tramites</p>
+</ng-template>
+<app-scroll-top></app-scroll-top>

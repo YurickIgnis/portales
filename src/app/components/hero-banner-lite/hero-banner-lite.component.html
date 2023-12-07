@@ -1,0 +1,24 @@
+<nav class="navbar navbar-light bg-light">
+  <div class="container">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="d-flex">
+        <input
+          id="typeahead-focus"
+          (focus)="focus$.next($any($event).target.value)"
+          (click)="click$.next($any($event).target.value)"
+         
+          formControlName="tag" 
+          class="form-control me-2 size" 
+          placeholder="Buscar por palabra clave o dependencia" 
+          aria-label="Buscar"
+        >
+        <button class="btn btn-primary" type="submit">Buscar</button>
+    </form>
+     <!--  <a class="navbar-brand" href="/">
+          Registro Estatal de Trámites y Servicios
+      </a> -->
+  </div>
+</nav>
+
+
+<!-- [ngbTypeahead]="search"
+#instance="ngbTypeahead" -->

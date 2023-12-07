@@ -1,0 +1,34 @@
+.bg-color {
+    --bs-bg-opacity: 1;
+    background-color: rgba(46, 46, 46, var(--bs-bg-opacity)) !important;
+}
+
+
+.bg-green-color {
+    --bs-bg-opacity: 1;
+    background-color: rgba(118, 184, 42, var(--bs-bg-opacity)) !important;
+}
+
+.border {
+    width: auto;
+    height: 10px;
+    background: #338C36;
+}
+
+.bg-color-2 {
+    --bs-bg-opacity: 1;
+    background-color: #585858 !important;
+}
+
+
+h5.text-uppercase {
+    text-transform: lowercase;
+    font-weight: bold;
+  }
+
+
+
+  ul.list-unstyled li a.text-white {
+    text-decoration: none;
+  }
+  

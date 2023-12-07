@@ -1,0 +1,138 @@
+@import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+h3.card-title.mbr-section-subtitle.mbr-fonts-style.display-7 {
+  font-size: 19.2px;
+}
+
+.container {
+  .wrapper {
+
+    .title {
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 2px rgb(151, 149, 149);
+  }
+    .title3 {
+      h3.card-title.mbr-section-subtitle.mbr-fonts-style.display-7 {
+        font-size: 19.2px;
+      }
+    }
+
+    .panel {
+      .card {
+        background-color: transparent;
+        box-shadow: 0px 10px 20px 0px rgba(29, 29, 27, 0.2);
+        transition: background-color 0.3s linear;
+
+        &:hover {
+          .acc-button-container .acc-button {
+            background-color: #055a1c;
+
+            .acc-button-line1,
+            .acc-button-line2 {
+              background-color: white;
+            }
+          }
+        }
+
+        .heading-acc {
+          padding: 20px;
+          cursor: pointer;
+
+          &:hover {
+            .acc-button-container .acc-button {
+              background-color: #055a1c;
+
+              .acc-button-line1,
+              .acc-button-line2 {
+                background-color: white;
+              }
+            }
+          }
+
+          .acc-button-container {
+            .acc-button {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              position: relative;
+              transition: 0.3s linear;
+              background-color: transparent;
+
+              .acc-button-line1,
+              .acc-button-line2 {
+                transition: 0.3s linear;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                display: block;
+                background-color: black;
+                width: 2px;
+                height: 22px;
+                transform: translate(-50%, -50%);
+              }
+
+              .acc-button-line1 {
+                transform: translate(-50%, -50%) rotate(90deg);
+              }
+            }
+          }
+
+          &[aria-expanded="true"] .acc-button {
+            transform: rotate(-45deg);
+          }
+        }
+
+        .accordion-body {
+          padding-top: 1rem;
+          padding-bottom: 3rem;
+
+          max-height: 0px;
+          overflow: hidden;
+          transition: max-height 0.5s ease;
+
+          &.show {
+            max-height: 1000px; /* El valor debe ser suficientemente grande para mostrar todo el contenido */
+          }
+
+        }
+      }
+    }
+  }
+}
+
+
+.acc-button-line1, .acc-button-line2 {
+  transition: 0.3s linear;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  background-color: black;
+  width: 2px;
+  height: 22px;
+  transform: translate(-50%, -50%);
+}
+
+// .acc-button-line1 {
+//   transform: translate(-50%, -50%) rotate(90deg);
+// }
+
+.rotate-line1 {
+  transform: translate(-50%, -50%) rotate(45deg) !important;
+}
+
+.rotate-line2 {
+  transform: translate(-50%, -50%) rotate(-45deg) !important;
+}
+
+
+
+// .accordion-body {
+//   max-height: 0;
+//   overflow: hidden;
+//   transition: max-height 0.8s ease-in-out; /* Ajusta la velocidad y la curva de timing */
+
+//   &.show {
+//     max-height: 1000px; /* El valor debe ser suficientemente grande para mostrar todo el contenido */
+//   }
+// }

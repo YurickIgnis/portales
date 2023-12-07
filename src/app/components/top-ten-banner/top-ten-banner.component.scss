@@ -1,0 +1,8 @@
+.bg-color {
+    --bs-bg-opacity: 1;
+    background-color: rgba(230, 0, 100, var(--bs-bg-opacity)) !important;
+}
+
+.list {
+    overflow-x: scroll;
+}

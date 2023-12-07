@@ -1,0 +1,27 @@
+<!-- <div class="container-fluid">
+    <div class="d-flex align-items-center justify-content-center">
+        <div *ngIf="pubApi != null">
+        <app-info-card *ngFor="let info of pubApi.publicApi.infografia" 
+            link="{{info.link}}" 
+            text="{{info.text}}" 
+            [iconPrex]=info.iconPrex
+            [icon]=info.icon>
+        </app-info-card>
+        </div>
+    </div>
+</div> -->
+<div class="container">
+    <div *ngIf="pubApi != null" class="d-flex flex-wrap justify-content-center align-items-center">
+      <app-info-card *ngFor="let info of pubApi.publicApi.infografia"
+        [text]="info.text"
+        [iconPrex]="info.iconPrex"
+        [icon]="info.icon"
+        [link]="info.link"
+        (openModal)="openVerticallyCentered($event)">
+      </app-info-card>
+    </div>
+  </div>
+  
+  
+  
+  
